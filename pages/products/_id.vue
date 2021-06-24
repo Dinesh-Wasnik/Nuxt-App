@@ -8,6 +8,7 @@
                 <RentModal 
                     :product="product"
                 />
+                
             </div>
         </div>
         <div class="whats-included-container">
