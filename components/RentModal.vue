@@ -33,6 +33,7 @@ import {mapMutations} from "vuex"
       },
       hideModal() {
         this.$refs['my-modal'].hide()
+		this.$router.push('/my-items'); 
       },
       toggleModal() {
         this.$refs['my-modal'].toggle('#toggle-btn')
