@@ -22,8 +22,9 @@
     </b-modal>
   </div>
 </template>
-
+ 
 <script>
+import {mapMutations} from "vuex"
   export default {
     props: ['product'],
     methods: {
@@ -36,6 +37,7 @@
       toggleModal() {
         this.$refs['my-modal'].toggle('#toggle-btn')
       },
+	   ...mapMutations(['addItem']),
     }
   }
 </script>
